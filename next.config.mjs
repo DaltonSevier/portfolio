@@ -1,6 +1,11 @@
 import {withSentryConfig} from '@sentry/nextjs';
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    // Uncomment when deploying
+    // typescript: {
+    //     ignoreBuildErrors: true,
+    // }
+};
 
 export default withSentryConfig(nextConfig, {
 // For all available options, see:
